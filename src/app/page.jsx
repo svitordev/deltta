@@ -1,14 +1,15 @@
-import { SeeAllPlus } from "@/components/SeeAllPlus";
-import { Title } from "@/components/Title";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { ServicesSection } from "@/components/sections/ServicesSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 
-export default function Home() {
+const Index = () => {
   return (
-    <div>
-      aaaa
-      <Title>Últimas Notícias</Title>
-      <div className="flex justify-end">
-        <SeeAllPlus>Ver todas</SeeAllPlus>
-      </div>
+    <div className="min-h-screen bg-background">
+      <HeroSection />
+      <ServicesSection />
+      <TestimonialsSection />
     </div>
   );
-}
+};
+
+export default Index;

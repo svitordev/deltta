@@ -1,35 +1,99 @@
 /** @type {import('tailwindcss').Config} */
-const { fontFamily } = require('tailwindcss/defaultTheme');
 module.exports = {
-    content: [
-  "./pages/**/*.{js,jsx,ts,tsx}",
-  "./components/**/*.{js,jsx,ts,tsx}",
-  "./app/**/*.{js,jsx,ts,tsx}",
-  "./src/**/*.{js,jsx,ts,tsx}",
-],
-
-    theme: {
-      extend: {
-        fontFamily: {
-          sans: ['var(--font-poppins)', ...fontFamily.sans],
-          serif: ['var(--font-merriweather)', ...fontFamily.serif],
-        },
-        colors:{
-            primary: {
-                1: '#b69c74',
-                2: '#201c14',
-            },
-            secundary: {
-                1: '#1f3d22',
-                2: '#132615',
-            },
-            terciary: {
-                1: '#faf8e8',
-                2: '#f5efc3',
-            },
-        }
+  darkMode: ["class"],
+  content: [
+    "./pages/**/*.{ts,tsx,js,jsx,mdx}",
+    "./components/**/*.{ts,tsx,js,jsx,mdx}",
+    "./app/**/*.{ts,tsx,js,jsx,mdx}",
+    "./src/**/*.{ts,tsx,js,jsx,mdx}",
+  ],
+  prefix: "",
+  theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
       },
     },
-    plugins: [],
-  }
-  
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        heading: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+        deltta: {
+          blue: "hsl(var(--deltta-blue))",
+          green: "hsl(var(--deltta-green))",
+          "blue-light": "hsl(var(--deltta-blue-light))",
+          "green-light": "hsl(var(--deltta-green-light))",
+          "blue-dark": "hsl(var(--deltta-blue-dark))",
+          "green-dark": "hsl(var(--deltta-green-dark))",
+        },
+        sidebar: {
+          DEFAULT: "hsl(var(--sidebar-background))",
+          foreground: "hsl(var(--sidebar-foreground))",
+          primary: "hsl(var(--sidebar-primary))",
+          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+          accent: "hsl(var(--sidebar-accent))",
+          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+          border: "hsl(var(--sidebar-border))",
+          ring: "hsl(var(--sidebar-ring))",
+        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
+    },
+  },
+  plugins: [require("tailwindcss-animate")],
+};
