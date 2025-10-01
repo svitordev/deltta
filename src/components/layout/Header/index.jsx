@@ -13,7 +13,6 @@ const navigation = [
   { name: "Serviços", href: "/servicos" },
   { name: "Sobre", href: "/sobre" },
   { name: "Contato", href: "/contato" },
-  { name: "Links Uteis", href: "/linksUteis" },
 ];
 
 export function Header() {
