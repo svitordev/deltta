@@ -21,7 +21,7 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 lg:px-8">
         <div className="max-w-3xl">
-          <div className="fade-in space-y-6">
+          <div className="fade-in space-y-6 lg:mt-16">
             {/* Badge */}
             <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
               <Shield className="h-4 w-4 text-white" />
@@ -49,20 +49,23 @@ export function HeroSection() {
                 size="lg"
                 className="bg-white text-primary hover:bg-white/90 shadow-deltta font-semibold"
               >
-                Conheça Nossos Serviços
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <a href="/servicos" className="flex items-center">
+                  Conheça Nossos Serviços
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
 
               <Button
                 size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-primary"
+                className="bg-white text-primary hover:bg-white/90 shadow-deltta font-semibold"
               >
-                Fale Conosco
+                <a href="https://wa.me/558197354465?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consultoria.%20Podemos%20alinhar%20um%20hor%C3%A1rio%3F" target="_blank" rel="noopener noreferrer">
+                  Fale Conosco
+                </a>
               </Button>
             </div>
 
-            {/* Stats */}
+            {/* Stats
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-8 w-3/4">
               <div className="text-center">
                 <div className="text-3xl font-bold text-white">15+</div>
@@ -76,7 +79,7 @@ export function HeroSection() {
                 <div className="text-3xl font-bold text-white">100%</div>
                 <div className="text-white/80 text-sm">Comprometimento</div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

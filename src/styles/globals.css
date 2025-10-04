@@ -123,11 +123,11 @@ All colors MUST be HSL.
     );
   }
 
-  .gradient-deltta-light {
+  .gradient-deltta-hover {
     background: linear-gradient(
       135deg,
-      hsl(var(--deltta-blue-light)),
-      hsl(var(--deltta-green-light))
+      hsl(var(--deltta-green)),
+      hsl(var(--deltta-blue))
     );
   }
 

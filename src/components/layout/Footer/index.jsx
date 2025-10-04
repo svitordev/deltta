@@ -44,6 +44,7 @@ export const Footer = () => {
               <li><a href="/servicos" className="hover:text-white transition-colors">Serviços</a></li>
               <li><a href="/sobre" className="hover:text-white transition-colors">Sobre</a></li>
               <li><a href="/contato" className="hover:text-white transition-colors">Contato</a></li>
+              <li><a href="/linksuteis" className="hover:text-white transition-colors">Links Uteis</a></li>
             </ul>
           </div>
 
@@ -51,18 +52,19 @@ export const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Contato</h4>
             <div className="space-y-3 text-primary-foreground/80">
-              <div className="flex items-center space-x-3">
+              <a href='https://maps.app.goo.gl/nSVVQDhn4g3Qshmk9' className="flex items-center space-x-3 hover:text-white" target='_blank' rel="noopener noreferrer">
                 <MapPin className="h-4 w-4 text-secondary" />
                 <span className="text-sm">Rua Exemplo, 123 - Centro<br />São Paulo - SP</span>
-              </div>
-              <div className="flex items-center space-x-3">
+              </a>
+              
+              <a href="https://wa.me/558197354465?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consultoria.%20Podemos%20alinhar%20um%20hor%C3%A1rio%3F" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 hover:text-white">
                 <Phone className="h-4 w-4 text-secondary" />
-                <span className="text-sm">(11) 3456-7890</span>
-              </div>
-              <div className="flex items-center space-x-3">
+                <span className="text-sm">(81) 99735-4465</span>
+              </a>
+              <a href="mailto:administrativo@delttaservico.com.br?subject=Agendamento%20de%20consultoria&body=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consultoria.%20Podemos%20alinhar%20um%20hor%C3%A1rio%3F" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 hover:text-white">
                 <Mail className="h-4 w-4 text-secondary" />
-                <span className="text-sm">contato@deltta.com.br</span>
-              </div>
+                <span className="text-sm">administrativo@delttaservico.com.br</span>
+              </a>
             </div>
           </div>
         </div>

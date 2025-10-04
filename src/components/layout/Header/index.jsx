@@ -13,6 +13,7 @@ const navigation = [
   { name: "Serviços", href: "/servicos" },
   { name: "Sobre", href: "/sobre" },
   { name: "Contato", href: "/contato" },
+  { name: "Links Uteis", href: "/linksuteis" },
 ];
 
 export function Header() {
@@ -44,9 +45,11 @@ export function Header() {
           <div className="hidden md:block">
             <Button
               variant="default"
-              className="gradient-deltta text-white border-0"
+              className="gradient-deltta hover:gradient-deltta-hover text-white border-0"
             >
-              Fale Conosco
+              <a href="https://wa.me/558197354465?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consultoria.%20Podemos%20alinhar%20um%20hor%C3%A1rio%3F" target="_blank" rel="noopener noreferrer">
+                  Fale Conosco
+                </a>
             </Button>
           </div>
 
@@ -81,7 +84,9 @@ export function Header() {
               variant="default"
               className="w-full gradient-deltta text-white border-0 mt-4"
             >
-              Fale Conosco
+              <a href="https://wa.me/558197354465?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consultoria.%20Podemos%20alinhar%20um%20hor%C3%A1rio%3F" target="_blank" rel="noopener noreferrer">
+                  Fale Conosco
+                </a>
             </Button>
           </nav>
         </div>

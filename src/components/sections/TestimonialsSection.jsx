@@ -87,11 +87,7 @@ export function TestimonialsSection() {
         {/* Trust Indicators */}
         <div className="mt-16 text-center fade-in">
           <div className="bg-muted rounded-2xl p-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="space-y-2">
-                <div className="text-2xl font-bold text-primary">15+</div>
-                <div className="text-sm text-muted-foreground">Anos no Mercado</div>
-              </div>
+            <div className="grid grid-cols-2 md:grid-cols- gap-6">
               <div className="space-y-2">
                 <div className="text-2xl font-bold text-secondary">500+</div>
                 <div className="text-sm text-muted-foreground">Empresas Atendidas</div>

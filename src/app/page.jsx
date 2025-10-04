@@ -7,7 +7,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <HeroSection />
       <ServicesSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
     </div>
   );
 };

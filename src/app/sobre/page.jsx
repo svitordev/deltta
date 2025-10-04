@@ -88,7 +88,7 @@ export default function Sobre() {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Fundada em 2009, a Deltta nasceu da visão de integrar
+                  Fundada em 2024, a Deltta nasceu da visão de integrar
                   excelência contábil com responsabilidade ambiental. Nossos
                   fundadores identificaram a necessidade crescente das empresas
                   em equilibrar resultados financeiros com impacto ambiental
@@ -209,13 +209,13 @@ export default function Sobre() {
                   </Card>
                 );
               })}
-            </div>
+            </div> 
           </div>
         </div>
       </section>
 
       {/* Nossa Equipe */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 fade-in">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
@@ -273,7 +273,7 @@ export default function Sobre() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

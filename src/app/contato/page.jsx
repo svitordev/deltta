@@ -8,27 +8,27 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Endereço",
-    content: ["Rua Exemplo, 123 - Centro", "São Paulo - SP", "CEP: 01234-567"],
+    content: ["Rua Antônio Farias, 207 - Centro", "Surubim - PE", "CEP: 55750-000"],
     color: "text-primary"
   },
   {
     icon: Phone,
     title: "Telefone",
-    content: ["(11) 3456-7890", "(11) 98765-4321"],
+    content: ["(81) 99735-4465"],
     color: "text-secondary"
   },
   {
     icon: Mail,
     title: "E-mail",
-    content: ["contato@deltta.com.br", "comercial@deltta.com.br"],
+    content: ["administrativo@delttaservico.com.br"],
     color: "text-primary"
   },
-  {
-    icon: Clock,
-    title: "Horário",
-    content: ["Segunda a Sexta: 8h às 18h", "Sábado: 8h às 12h", "Domingo: Fechado"],
-    color: "text-secondary"
-  }
+  // {
+  //   icon: Clock,
+  //   title: "Horário",
+  //   content: ["Segunda a Sexta: 8h às 18h", "Sábado: 8h às 12h", "Domingo: Fechado"],
+  //   color: "text-secondary"
+  // }
 ];
 export default function Contato() {
   return (
@@ -52,7 +52,7 @@ export default function Contato() {
       {/* Contact Info Cards */}
       <section className="py-16">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             {contactInfo.map((info, index) => {
               const Icon = info.icon;
               return (
@@ -86,9 +86,9 @@ export default function Contato() {
       {/* Contact Form & Map */}
       <section className="py-16 bg-muted">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12"> */}
             {/* Contact Form */}
-            <div className="fade-in">
+            {/* <div className="fade-in">
               <Card className="border-0 bg-white shadow-deltta">
                 <CardContent className="p-8">
                   <div className="space-y-6">
@@ -181,16 +181,16 @@ export default function Contato() {
                   </div>
                 </CardContent>
               </Card>
-            </div>
+            </div> */}
 
             {/* Map & Additional Info */}
-            <div className="space-y-6 fade-in">
+            <div className="space-y-6  flex justify-between w-full gap-10">
               {/* Map */}
-              <Card className="border-0 bg-white shadow-deltta">
+              <Card className="border-0 bg-white shadow-deltta w-1/2 h-96">
                 <CardContent className="p-0">
                   <div className="h-96 bg-muted rounded-lg relative overflow-hidden">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1976567516953!2d-46.63531668502185!3d-23.561414484691455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sSP%20-%20Sé%2C%20São%20Paulo%20-%20SP!5e0!3m2!1sen!2sbr!4v1635789123456!5m2!1sen!2sbr"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475.0913833580071!2d-35.75647392023593!3d-7.835545840755319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7abdca498450d1d%3A0x32ae42363608f09b!2sR.%20Ant%C3%B4nio%20Farias%2C%20207%20-%20Centro%2C%20Surubim%20-%20PE%2C%2055750-000!5e1!3m2!1spt-BR!2sbr!4v1759541816088!5m2!1spt-BR!2sbr"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
@@ -204,7 +204,7 @@ export default function Contato() {
               </Card>
 
               {/* Additional Info */}
-              <Card className="border-0 bg-white shadow-deltta">
+              <Card className="border-0 bg-white shadow-deltta w-1/2 h-96 mt-0">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-foreground mb-4">
                     Por que escolher a Deltta?
@@ -224,17 +224,13 @@ export default function Contato() {
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                      <span>Mais de 15 anos de experiência</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-secondary rounded-full"></div>
                       <span>Comprometimento com resultados</span>
                     </div>
                   </div>
                 </CardContent>
               </Card>
             </div>
-          </div>
+          {/* </div> */}
         </div>
       </section>
 

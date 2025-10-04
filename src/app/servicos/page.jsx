@@ -163,7 +163,8 @@ export default function Servicos() {
 
                         <div className="pt-4">
                           <button className="text-primary font-medium hover:underline">
-                            Solicitar consultoria →
+                            <a href="https://wa.me/558197354465?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consultoria.%20Podemos%20alinhar%20um%20hor%C3%A1rio%3F" target="_blank" rel="noopener noreferrer">Solicitar consultoria →</a>
+                            
                           </button>
                         </div>
                       </div>
@@ -189,11 +190,15 @@ export default function Servicos() {
               empresa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="gradient-deltta text-white px-8 py-4 rounded-lg font-semibold hover:shadow-deltta transition-all duration-300">
-                Agendar Consultoria Gratuita
+              <button className="gradient-deltta hover:gradient-deltta-hover text-white px-8 py-4 rounded-lg font-semibold hover:shadow-deltta transition-all duration-300">
+                <a href="https://wa.me/558197354465?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consultoria.%20Podemos%20alinhar%20um%20hor%C3%A1rio%3F" target="_blank" rel="noopener noreferrer">
+                   Agendar Consultoria Gratuita
+                </a>
               </button>
               <button className="border border-primary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all duration-300">
-                Solicitar Orçamento
+                <a href="https://wa.me/558197354465?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consultoria.%20Podemos%20alinhar%20um%20hor%C3%A1rio%3F" target="_blank" rel="noopener noreferrer">
+                  Solicitar Orçamento
+                </a>
               </button>
             </div>
           </div>
