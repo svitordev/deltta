@@ -142,13 +142,13 @@ export default function LinksUteis() {
       {/* link Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {detailedLinksUteis.map((link, index) => {
               const Icon = link.icon;
               return (
                 <Card
                   key={index}
-                  className="group hover:shadow-deltta transition-all duration-300 border-0 bg-white overflow-hidden"
+                  className="group  hover:shadow-deltta transition-all duration-300 border-0 bg-white overflow-hidden"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <CardContent className="p-8">
@@ -163,7 +163,7 @@ export default function LinksUteis() {
                       </div>
 
                       {/* Content */}
-                      <div className="flex-1 space-y-4">
+                      <div className="flex-1">
                         <h3 className="text-2xl font-semibold text-foreground group-hover:text-primary transition-colors">
                           {link.title}
                         </h3>

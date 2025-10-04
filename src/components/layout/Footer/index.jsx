@@ -41,8 +41,8 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold">Links Úteis</h4>
             <ul className="space-y-2 text-primary-foreground/80">
               <li><a href="/" className="hover:text-white transition-colors">Início</a></li>
-              <li><a href="/servicos" className="hover:text-white transition-colors">Serviços</a></li>
               <li><a href="/sobre" className="hover:text-white transition-colors">Sobre</a></li>
+              <li><a href="/servicos" className="hover:text-white transition-colors">Serviços</a></li>
               <li><a href="/contato" className="hover:text-white transition-colors">Contato</a></li>
               <li><a href="/linksuteis" className="hover:text-white transition-colors">Links Uteis</a></li>
             </ul>
@@ -54,7 +54,7 @@ export const Footer = () => {
             <div className="space-y-3 text-primary-foreground/80">
               <a href='https://maps.app.goo.gl/nSVVQDhn4g3Qshmk9' className="flex items-center space-x-3 hover:text-white" target='_blank' rel="noopener noreferrer">
                 <MapPin className="h-4 w-4 text-secondary" />
-                <span className="text-sm">Rua Exemplo, 123 - Centro<br />São Paulo - SP</span>
+                <span className="text-sm">Rua Antônio Farias, 207 - Centro<br />Surubim - PE</span>
               </a>
               
               <a href="https://wa.me/558197354465?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consultoria.%20Podemos%20alinhar%20um%20hor%C3%A1rio%3F" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 hover:text-white">

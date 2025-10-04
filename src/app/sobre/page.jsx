@@ -124,17 +124,17 @@ export default function Sobre() {
       {/* Missão, Visão e Valores */}
       <section className="py-16 bg-muted">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {/* Missão */}
             <Card className="border-0 bg-white hover:shadow-deltta transition-all duration-300">
-              <CardContent className="p-8 text-center space-y-4">
+              <CardContent className="p-8 text-center space-y-4 flex flex-col justify-center items-center">
                 <div className="inline-flex p-4 rounded-full bg-primary/10">
                   <Target className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-2xl font-semibold text-foreground">
                   Missão
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed w-1/2">
                   Oferecer soluções contábeis e ambientais de excelência,
                   promovendo o crescimento sustentável e a responsabilidade
                   social das empresas.
@@ -144,14 +144,15 @@ export default function Sobre() {
 
             {/* Visão */}
             <Card className="border-0 bg-white hover:shadow-deltta transition-all duration-300">
-              <CardContent className="p-8 text-center space-y-4">
+              <CardContent className="p-8 text-center space-y-4 flex flex-col justify-center items-center
+        ">
                 <div className="inline-flex p-4 rounded-full bg-secondary/10">
                   <Eye className="h-8 w-8 text-secondary" />
                 </div>
                 <h3 className="text-2xl font-semibold text-foreground">
                   Visão
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed w-1/2">
                   Ser reconhecida como a principal referência em serviços
                   integrados de contabilidade e consultoria ambiental no Brasil.
                 </p>
@@ -159,7 +160,7 @@ export default function Sobre() {
             </Card>
 
             {/* Certificações */}
-            <Card className="border-0 bg-white hover:shadow-deltta transition-all duration-300">
+            {/* <Card className="border-0 bg-white hover:shadow-deltta transition-all duration-300">
               <CardContent className="p-8 text-center space-y-4">
                 <div className="inline-flex p-4 rounded-full bg-accent/10">
                   <Award className="h-8 w-8 text-accent" />
@@ -172,7 +173,7 @@ export default function Sobre() {
                   órgãos reguladores contábeis e ambientais.
                 </p>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
 
           {/* Valores */}

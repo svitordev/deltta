@@ -10,8 +10,8 @@ import logo from "@/assets/Logotipo/colorido/azulverde.png"
 
 const navigation = [
   { name: "Início", href: "/" },
-  { name: "Serviços", href: "/servicos" },
   { name: "Sobre", href: "/sobre" },
+  { name: "Serviços", href: "/servicos" },
   { name: "Contato", href: "/contato" },
   { name: "Links Uteis", href: "/linksuteis" },
 ];
