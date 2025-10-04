@@ -101,8 +101,7 @@ export default function Sobre() {
                   responsável e lucrativa.
                 </p>
                 <p>
-                  Hoje, somos reconhecidos como referência no mercado, atendendo
-                  mais de 500 empresas e contribuindo para um futuro mais
+                  Hoje, somos reconhecidos como referência no mercado, contribuindo para um futuro mais
                   sustentável através de nossos serviços especializados.
                 </p>
               </div>
