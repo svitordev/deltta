@@ -31,15 +31,16 @@ export function TestimonialsSection() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 fade-in">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            O que dizem nossos <span className="text-gradient">clientes</span>
+            {/* O que dizem  */}
+            Nossos <span className="text-gradient">clientes</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
             A confiança dos nossos parceiros é o reflexo do nosso compromisso 
-            com a excelência e resultados sustentáveis.
+            com a excelência.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index}
@@ -47,12 +48,10 @@ export function TestimonialsSection() {
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <CardContent className="p-8 space-y-6">
-                {/* Quote Icon */}
                 <div className="absolute top-6 right-6 opacity-10 group-hover:opacity-20 transition-opacity">
                   <Quote className="h-12 w-12 text-secondary" />
                 </div>
 
-                {/* Stars */}
                 <div className="flex space-x-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star 
@@ -62,12 +61,10 @@ export function TestimonialsSection() {
                   ))}
                 </div>
 
-                {/* Content */}
                 <p className="text-muted-foreground leading-relaxed italic relative z-10">
                   "{testimonial.content}"
                 </p>
 
-                {/* Author */}
                 <div className="border-t pt-6 space-y-2">
                   <h4 className="font-semibold text-foreground">
                     {testimonial.name}
@@ -82,7 +79,7 @@ export function TestimonialsSection() {
               </CardContent>
             </Card>
           ))}
-        </div>
+        </div> */}
 
         {/* Trust Indicators */}
         {/* <div className="mt-16 text-center fade-in">

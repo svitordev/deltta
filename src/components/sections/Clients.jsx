@@ -1,23 +1,21 @@
-// app/components/Clients.tsx (ou onde preferir)
 "use client"
 import Image from "next/image";
 
 export default function Clients() {
-  // 🔗 Ajuste href/src/alt conforme seus arquivos em /public/clientes
   const logos = [
+      { href: "https://casinhas.pe.leg.br/v1/", src: "/clientes/casinhas.png", alt: "Câmara municipal de Casinhas - PE" },
+      { href: "https://joaoalfredo.pe.gov.br/", src: "/clientes/joaoAlfredo.jpg", alt: "Prefeitura de João Alfredo - PE" },
+      { href: "https://vertentedolerio.pe.leg.br/", src: "/clientes/vertenteLerio.png", alt: "Câmara municipal de Vertente do Lério" },
+      { href: "https://saaecatende.pe.gov.br/", src: "/clientes/saaeCatende.png", alt: "SAAE Catende" },
     { href: "https://www.asquija.org.br/", src: "/clientes/asquija.png", alt: "Associação Quilombola de João Alfredo - PE" },
-    { href: "https://casinhas.pe.leg.br/v1/", src: "/clientes/casinhas.jpeg", alt: "Prefeitura de Casinhas - PE" },
     { href: "https://www.instagram.com/chinabar_surubim?igsh=MWhkYXdxbzA5N3NwNw==", src: "/clientes/chinaBar.jpg", alt: "China Bar" },
-    { href: "https://joaoalfredo.pe.gov.br/", src: "/clientes/joaoAlfredo.jpg", alt: "Prefeitura de João Alfredo - PE" },
-    { href: "https://saaecatende.pe.gov.br/", src: "/clientes/saaeCatende.png", alt: "SAAE Catende" },
     { href: "https://www.instagram.com/surubimpizzas?igsh=Y3p5MnhxbXJ4amhw", src: "/clientes/surubimPizzas.jpg", alt: "Surubim Pizzas" },
-    { href: "https://vertentedolerio.pe.leg.br/", src: "/clientes/vertenteLerio.png", alt: "Prefeitura de Vertente do Lério" },
   ];
 
   const loop = [...logos, ...logos];
 
   return (
-    <section className="py-20 bg-muted">
+    <section className="pb-20 bg-muted">
       <div className="mx-auto max-w-7xl">
         <h2 className="sr-only">Clientes</h2>
 
