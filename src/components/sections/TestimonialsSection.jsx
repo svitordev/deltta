@@ -85,7 +85,7 @@ export function TestimonialsSection() {
         </div>
 
         {/* Trust Indicators */}
-        <div className="mt-16 text-center fade-in">
+        {/* <div className="mt-16 text-center fade-in">
           <div className="bg-muted rounded-2xl p-8">
             <div className="grid grid-cols-2 md:grid-cols- gap-6">
               <div className="space-y-2">
@@ -102,7 +102,9 @@ export function TestimonialsSection() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
+        
       </div>
     </section>
   );
