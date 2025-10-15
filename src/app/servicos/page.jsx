@@ -6,6 +6,9 @@ import {
   TrendingUp,
   Shield,
   CheckCircle,
+  Landmark,
+  BriefcaseBusiness,
+  HeartHandshake
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -91,6 +94,51 @@ const detailedServices = [
       "Gestão de resíduos",
       "Controle de emissões",
       "Treinamentos ambientais",
+    ],
+    color: "text-accent",
+  },
+
+  {
+    icon: Landmark,
+    title: "Contabilidade Pública (assessoria e consultoria)",
+    description:
+      "Gestão contábil para órgãos e entidades públicas, com total conformidade a MCASP/PCASP e LRF.",
+    features: [
+      "Escrituração em conformidade com MCASP/PCASP",
+      "Elaboração de RREO, RGF e Balanços",
+      "Conciliações e gestão de Restos a Pagar",
+      "Suporte à prestação de contas",
+      "Análise de indicadores fiscais e limites da LRF",
+    ],
+    color: "text-primary",
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: "Assessoria Recursos Humanos (pública e privada)",
+    description:
+      "Operação completa de folha e pessoas para órgãos públicos e empresas privadas.",
+    features: [
+      "Processamento de folha, encargos e 13º",
+      "Admissões, rescisões, férias e rotinas",
+      "eSocial",
+      "EFD-Reinf",
+      "FGTS Digital",
+    ],
+    color: "text-secondary",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Contabilidade para o Terceiro Setor (associações, cooperativas e igrejas)",
+    description:
+      "Contabilidade especializada para OSCs, com foco em transparência e sustentabilidade dos projetos.",
+    features: [
+      "Plano de contas do terceiro setor e escrituração Contábil",
+      "Demonstrações financeiras",
+      "Gestão de convênios/projetos",
+      "Acompanhamento personalizado na prestação de contas",
+      "Conciliações e centros de custo por projeto",
+      "Apoio a imunidades/isenções e regularidade fiscal",
+      "Gestão financeira da entidade",
     ],
     color: "text-accent",
   },
