@@ -15,7 +15,7 @@ export function HeroSection() {
           alt="Equipe profissional Deltta"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/70 to-secondary/20"></div>
       </div>
 
       {/* Content */}

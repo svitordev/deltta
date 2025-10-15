@@ -10,7 +10,7 @@ All colors MUST be HSL.
   :root {
     /* Deltta Brand Colors */
     --deltta-blue: 214 76% 18%; /* #081e3b */
-    --deltta-green: 157 58% 46; /* #31bb86 */
+    --deltta-green: 200 0% 80%; /* #31bb86 */
     --deltta-blue-light: 210 71% 45%;
     --deltta-green-light: 151 52% 62%;
     --deltta-blue-dark: 210 71% 20%;
@@ -118,16 +118,16 @@ All colors MUST be HSL.
   .gradient-deltta {
     background: linear-gradient(
       135deg,
-      hsl(var(--deltta-blue)),
-      hsl(var(--deltta-green))
+      hsl(var(--deltta-green)),
+      hsl(var(--deltta-blue))
     );
   }
 
   .gradient-deltta-hover {
     background: linear-gradient(
       135deg,
-      hsl(var(--deltta-green)),
-      hsl(var(--deltta-blue))
+      hsl(var(--deltta-blue)),
+      hsl(var(--deltta-green))
     );
   }
 
@@ -142,8 +142,8 @@ All colors MUST be HSL.
   .text-gradient {
     background: linear-gradient(
       135deg,
-      hsl(var(--deltta-blue)),
-      hsl(var(--deltta-green))
+      hsl(var(--deltta-green)),
+      hsl(var(--deltta-blue))
     );
     -webkit-background-clip: text;
     background-clip: text;
