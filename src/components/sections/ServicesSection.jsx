@@ -5,6 +5,9 @@ import {
   Users,
   TrendingUp,
   Shield,
+  Landmark,
+  BriefcaseBusiness,
+  HeartHandshake
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -49,6 +52,27 @@ const services = [
     title: "Compliance Ambiental",
     description:
       "Monitoramento e adequação às normas ambientais vigentes, garantindo conformidade e sustentabilidade.",
+    color: "text-accent",
+  },
+  {
+    icon: Landmark,
+    title: "Contabilidade Pública (assessoria e consultoria)",
+    description:
+      "Gestão contábil para órgãos e entidades públicas, com total conformidade a MCASP/PCASP e LRF.",
+    color: "text-primary",
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: "Assessoria Recursos Humanos (pública e privada)",
+    description:
+      "Operação completa de folha e pessoas para órgãos públicos e empresas privadas.",
+    color: "text-secondary",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Contabilidade para o Terceiro Setor (associações, cooperativas e igrejas)",
+    description:
+      "Contabilidade especializada para OSCs, com foco em transparência e sustentabilidade dos projetos.",
     color: "text-accent",
   },
 ];
