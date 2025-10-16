@@ -15,7 +15,7 @@ export default function Clients() {
   const loop = [...logos, ...logos];
 
   return (
-    <section className="pb-20 bg-muted">
+    <section className="pb-20 ">
       <div className="mx-auto max-w-7xl">
         <h2 className="sr-only">Clientes</h2>
 
