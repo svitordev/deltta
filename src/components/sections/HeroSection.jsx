@@ -33,7 +33,7 @@ export function HeroSection() {
 
             {/* Main Heading */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              Soluções <span className="text-secondary">Sustentáveis</span> em
+              Soluções Sustentáveis em
               Contabilidade
             </h1>
 
